@@ -24,5 +24,10 @@ namespace Vki.Mushrooms.Light
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
