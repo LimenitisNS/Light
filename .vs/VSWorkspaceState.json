@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Vki.Mushrooms.Light",
+    "\\Vki.Mushrooms.Light\\Model",
+    "\\Vki.Mushrooms.Light\\Model\\Observables",
+    "\\Vki.Mushrooms.Light\\Model\\Observer"
+  ],
+  "SelectedNode": "\\Vki.Mushrooms.Light\\Model\\Observables\\DeviceManager.cs",
+  "PreviewInSolutionExplorer": false
+}
