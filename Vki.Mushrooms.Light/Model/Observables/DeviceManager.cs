@@ -1,10 +1,10 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 public class DeviceManager : IObservable
 {
-    private List<IObserver> observers;
-
-    public ConcreteObservable()
+    private List<IObserver> observers; 
+                                
+    public void ConcreteObservable()
     {
         observers = new List<IObserver>();
     }

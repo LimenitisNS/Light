@@ -34,7 +34,7 @@
             Width="113"
             Height="50"
             Background="AliceBlue"
-            BorderBrush="DarkBlue"
+            BorderBrush="DarkBlue" Click="Button_Click_TurnON"
             />
         
         <Button 
@@ -45,7 +45,7 @@
             Width="113"
             Height="50"
             Background="AliceBlue"
-            BorderBrush="DarkBlue"
+            BorderBrush="DarkBlue" Click="Button_Click_TurnOFF"
             />
         
         <Button

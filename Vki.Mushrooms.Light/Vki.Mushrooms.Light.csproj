@@ -69,6 +69,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Observables\DeviceManager.cs" />
+    <Compile Include="Model\Observables\IObservable.cs" />
+    <Compile Include="Model\Observer\Ashtray.cs" />
+    <Compile Include="Model\Observer\IObserver.cs" />
+    <Compile Include="Model\Observer\Lamp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
