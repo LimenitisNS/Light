@@ -4,17 +4,17 @@ using System.Runtime.CompilerServices;
 public class Lamp : IObserver
 {
     private bool State = true;  //покой true или тревога false
-    private bool Mode = false; // вкл true или выкл false
-    private bool Regimen = true; // авто true или ручной false
+    private bool Light = false; // вкл true или выкл false
+    private bool Mode = true; // авто true или ручной false
 
     public void TurnLightOn()
     {
-        this.Mode = true;
+        this.Light = true;
     }
 
     public void TurnLightOff()
     {
-        this.Mode = false;
+        this.Light = false;
     }
 
     public void TurnOnAlarm()
@@ -29,12 +29,12 @@ public class Lamp : IObserver
 
     public void EnableAuto()
     {
-        this.Regimen = true;
+        this.Mode = true;
     }
 
     public void EnableManual()
     {
-        this.Regimen = false;
+        this.Mode = false;
     }
 
     public void Update()
