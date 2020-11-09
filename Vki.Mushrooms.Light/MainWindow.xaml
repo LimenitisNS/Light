@@ -5,8 +5,85 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vki.Mushrooms.Light"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Панель управления" Height="399.667" Width="660.334" Background="White"
+        Icon="/icon/icon.png">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.319"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+      <Button
+          Content="Вкл/Выкл"
+          HorizontalAlignment="Left"
+          Margin="233,42,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="AliceBlue"
+          BorderBrush="DarkBlue" Click="Button_Click_TurnON"
+            />
+
+      <Button
+          Content="Авто/Ручной"
+          HorizontalAlignment="Left"
+          Margin="32,42,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="AliceBlue"
+          BorderBrush="DarkBlue"
+            />
+
+      <Button
+          Content="Сигнал тревоги&#xD;&#xA;Вкл/Выкл"
+          HorizontalAlignment="Left"
+          Margin="32,236,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="LightCoral"
+          BorderBrush="DarkBlue"
+            />
+
+      <Button
+          Content="Человек вышел"
+          HorizontalAlignment="Left"
+          Margin="233,139,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="LightGray"
+          BorderBrush="DarkBlue" Click="Button_Click_2"
+            />
+
+      <Button
+          Content="Человек вошел"
+          HorizontalAlignment="Left"
+          Margin="32,139,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="LightGray"
+          BorderBrush="DarkBlue"
+            />
+      
+      <Button
+          Content="Выключить&#xD;&#xA;тревогу"
+          HorizontalAlignment="Left"
+          Margin="233,236,0,0"
+          VerticalAlignment="Top"
+          Width="175"
+          Height="55"
+          Background="LightCoral"
+          BorderBrush="DarkBlue" Click="Button_Click"
+            />
+      
+      <Image Margin="440,10,20.6,32.4" Source="image/lightOff.png" Stretch="Fill"/>
+      <Image Margin="440,10,20.6,32.4" Source="image/lightOn.png" Stretch="Fill"/>
+      <Image Margin="440,10,20.6,32.4" Source="image/alarmOn.png" Stretch="Fill"/>
     </Grid>
 </Window>
