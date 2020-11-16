@@ -1,44 +1,33 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-public class Lamp : IObserver
+namespace Vki.Mushrooms.Light.Model.Observer
 {
-    private bool State = true;  //покой true или тревога false
-    private bool Mode = false; // вкл true или выкл false
-    private bool Regimen = true; // авто true или ручной false
-
-    public void TurnLightOn()
+    public class Lamp
     {
-        this.Mode = true;
-    }
+        public bool IsStateCalm { get; private set; } = true; //покой true или тревога false - состояние лампочки
+        public bool IsTurnedOn { get; private set; } = false; // включен свет - true или выключен свет - false 
+        public bool IsAuto { get; private set; } = true; // режим автоматический - true или ручной - false
+        
+        public void SwitchState()
+        {
+            IsStateCalm = !IsStateCalm;
+        }
 
-    public void TurnLightOff()
-    {
-        this.Mode = false;
-    }
+        public void SwitchMode()
+        {
+            if (IsStateCalm)
+            {
+                IsAuto = !IsAuto;
+            }
+        }
 
-    public void TurnOnAlarm()
-    {
-        this.State = false;
-    }
-
-    public void TurnOffAlarm()
-    {
-        this.State = true;
-    }
-
-    public void EnableAuto()
-    {
-        this.Regimen = true;
-    }
-
-    public void EnableManual()
-    {
-        this.Regimen = false;
-    }
-
-    public void Update()
-    {
-
+        public void SwitchLight()
+        {
+            if (IsStateCalm)
+            {
+                IsTurnedOn = !IsTurnedOn;
+            }
+        }
     }
 }

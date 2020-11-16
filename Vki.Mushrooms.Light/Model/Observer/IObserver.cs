@@ -1,6 +1,9 @@
 ﻿using System;
 
-public interface IObserver
+namespace Vki.Mushrooms.Light.Model.Observer
 {
-	void Update();
+	public interface IObserver
+	{
+		void Update();
+	}
 }

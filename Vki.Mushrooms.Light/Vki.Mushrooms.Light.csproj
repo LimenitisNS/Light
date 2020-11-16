@@ -69,6 +69,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Observables\DeviceManager.cs" />
+    <Compile Include="Model\Observables\IObservable.cs" />
+    <Compile Include="Model\Observer\Ashtray.cs" />
+    <Compile Include="Model\Observer\IObserver.cs" />
+    <Compile Include="Model\Observer\Lamp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +98,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="image\light_off.jpg" />
+    <Resource Include="image\light_on.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon\icon.png" />
+    <Content Include="icon\icon.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
