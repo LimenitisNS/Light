@@ -69,11 +69,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Observables\DeviceManager.cs" />
-    <Compile Include="Model\Observables\IObservable.cs" />
-    <Compile Include="Model\Observer\Ashtray.cs" />
-    <Compile Include="Model\Observer\IObserver.cs" />
-    <Compile Include="Model\Observer\Lamp.cs" />
+    <Compile Include="Model\DeviceManager\DeviceManager.cs" />
+    <Compile Include="Model\DeviceManager\ILampObserver.cs" />
+    <Compile Include="Model\DeviceManager\IObservable.cs" />
+    <Compile Include="Model\DeviceManager\UpdateMessage\AlertStateMessage.cs" />
+    <Compile Include="Model\DeviceManager\UpdateMessage\DeviceMessage.cs" />
+    <Compile Include="Model\DeviceManager\UpdateMessage\ReactionModeMessage.cs" />
+    <Compile Include="Model\DeviceManager\UpdateMessage\SwitchLightingMessage.cs" />
+    <Compile Include="Model\Devices\IDevice.cs" />
+    <Compile Include="Model\Devices\LampDevice.cs" />
+    <Compile Include="Model\Devices\Ashtray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
